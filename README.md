@@ -1,6 +1,6 @@
 # Portfolio Website
 
-####|Mitch Duffy| duffymit@umich.edu | duffymitch12@gmail.com|
+|Mitch Duffy| duffymit@umich.edu | duffymitch12@gmail.com|
 
 <img src="/frontend/public/flask-logo.png" alt="Flask Logo" width="100"/> ## Flask Backend & React JSX Frontend <img src="/frontend/public/logo192.png" alt="React Logo" width="100"/>
 
