@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/flask/hello")
+      .get("https://mitch-professional-fd807196846f.herokuapp.com/")
       .then((response) => {
         console.log("SUCCESS", response);
         setGetMessage(response);
