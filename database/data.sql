@@ -2,7 +2,6 @@ PRAGMA foreign_keys = ON;
 
 INSERT into
     experience (
-        id,
         title,
         company,
         filename,
@@ -38,4 +37,16 @@ VALUES
         2024,
         'Feb',
         'Present'
-    );
+    ),
+    (
+        'Student',
+        'The University of Michigan',
+        'photo.jpg',
+        'MI',
+        'Ann Arbor',
+        'Computer Science BSE',
+        '2022',
+        '2024',
+        'Jan',
+        'Dec'
+    )

@@ -14,22 +14,24 @@ if [ $# -ne 1 ]; then
   usage
   exit 1
 fi
+
+case "$1" in
 "create")
-    echo sqlite3 var/insta485.sqlite3 < sql/schema.sql
-    sqlite3 var/insta485.sqlite3 < sql/schema.sql
-    echo sqlite3 var/insta485.sqlite3 < sql/data.sql
-    sqlite3 var/insta485.sqlite3 < sql/data.sql
+    echo sqlite3 database/exp.sqlite3 < database/schema.sql
+    sqlite3 database/exp.sqlite3 < database/schema.sql
+    echo sqlite3 database/exp.sqlite3 < database/data.sql
+    sqlite3 database/exp.sqlite3 < database/data.sql
     ;;
 
 
   "destroy")
-    echo rm -rf var/insta485.sqlite3 var/uploads
-    rm -rf var/insta485.sqlite3 var/uploads
+    echo rm -rf database/exp.sqlite3 #var/uploads
+    rm -rf database/exp.sqlite3 #var/uploads
     ;;
 
   "reset")
-    echo rm -rf var/insta485.sqlite3 var/uploads
-    rm -rf var/insta485.sqlite3 var/uploads
+    echo rm -rf database/exp.sqlite3 #var/uploads
+    rm -rf database/exp.sqlite3 #var/uploads
     echo mkdir -p var/uploads
     mkdir -p var/uploads
     echo sqlite3 var/insta485.sqlite3 < sql/schema.sql

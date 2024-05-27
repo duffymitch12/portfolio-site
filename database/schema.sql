@@ -1,16 +1,15 @@
 PRAGMA foreign_keys = ON;
 
-CREATE TABLE
-    experience (
-        exp_id INTEGER PRIMARY KEY AUTOINCREMENT,
-        title VARCHAR(20) NOT NULL,
-        company VARCHAR(40) NOT NULL,
-        filename VARCHAR(64) NOT NULL,
-        locationState VARCHAR(2) NOT NULL,
-        locationCity VARCHAR(20) NOT NULL,
-        description VARCHAR(256) NOT NULL,
+CREATE TABLE experience (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        title TEXT NOT NULL,
+        company TEXT NOT NULL,
+        filename TEXT NOT NULL,
+        locationState TEXT NOT NULL,
+        locationCity TEXT NOT NULL,
+        description TEXT NOT NULL,
         startYear INTEGER,
         endYear INTEGER,
-        startMonth VARCHAR(3) NOT NULL,
-        endMonth VARCHAR(10) NOT NULL,
+        startMonth TEXT NOT NULL,
+        endMonth TEXT NOT NULL
     );
